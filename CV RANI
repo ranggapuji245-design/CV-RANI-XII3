@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Digital | Rani Riyani</title>
+    <style>
+        :root {
+            --soft-blue: #e3f2fd;
+            --main-blue: #2196f3;
+            --dark-blue: #1565c0;
+            --accent-pink: #ff80ab;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--soft-blue);
+            color: var(--text-color);
+        }
+
+        .main-wrapper {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        /* Sidebar Kiri */
+        .sidebar {
+            flex: 1;
+            background-color: var(--main-blue);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid rgba(255,255,255,0.3);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 { font-size: 26px; margin-bottom: 5px; }
+        .sidebar p { font-weight: 300; opacity: 0.9; margin-top: 0; }
+
+        .contact-box {
+            text-align: left;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        .contact-item { margin-bottom: 20px; }
+        .contact-item strong { display: block; color: var(--soft-blue); font-size: 0.8em; text-transform: uppercase; }
+
+        /* Konten Utama */
+        .content {
+            flex: 2;
+            padding: 50px;
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            border-left: 5px solid var(--accent-pink);
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        .about-text { font-style: italic; color: #555; margin-bottom: 30px; }
+
+        .list-item {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .list-item::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--main-blue);
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: var(--soft-blue);
+            color: var(--dark-blue);
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .main-wrapper { flex-direction: column; margin: 15px; }
+            .sidebar { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+    <div class="sidebar">
+        <img src="WhatsApp Image 2026-02-04 at 09.46.46.jpeg" alt="Rani Riyani" class="profile-pic">
+        <h1>Rani Riyani</h1>
+        <p>Student & Creative Enthusiast</p>
+
+        <div class="contact-box">
+            <div class="contact-item"><strong>Telepon</strong> 0895620559222</div>
+            <div class="contact-item"><strong>Instagram</strong> @ranryni810</div>
+            <div class="contact-item"><strong>Lahir</strong> 8 Oktober 2008</div>
+            <div class="contact-item"><strong>Alamat</strong> Kp Nusa RT 04 RW 14, Kec. Baleendah, Kab. Bandung</div>
+        </div>
+
+        <h3 style="margin-top: 40px;">Bahasa</h3>
+        <p>Indonesia (Aktif)<br>Sunda (Native)</p>
+    </div>
+
+    <div class="content">
+        <h2>Tentang Saya</h2>
+        <p class="about-text">"Saya adalah pribadi yang disiplin dan bertanggung jawab. Sebagai seorang ekstrovert yang ceria, saya sangat menikmati interaksi sosial dan mudah beradaptasi dengan lingkungan baru. Memiliki minat besar dalam dunia seni suara dan kuliner."</p>
+
+        <h2>Pendidikan</h2>
+        <div class="list-item"><strong>SMA KP Baleendah</strong> (Lulus 2026)</div>
+        <div class="list-item"><strong>SMPN 3 Baleendah</strong> (Lulus 2023)</div>
+        <div class="list-item"><strong>SDN Jatimekar</strong> (Lulus 2020)</div>
+
+        <h2>Keahlian & Minat</h2>
+        <div class="tag-container">
+            <span class="tag">Menyanyi</span>
+            <span class="tag">Memasak</span>
+            <span class="tag">Membaca Al-Qur'an</span>
+            <span class="tag">Interaksi Sosial</span>
+            <span class="tag">Adaptasi Cepat</span>
+        </div>
+
+        <h2>Pengalaman Organisasi</h2>
+        <div class="list-item"><strong>Ekstrakurikuler Badminton & Rohis</strong> (SMA)</div>
+        <div class="list-item"><strong>Ekstrakurikuler Badminton</strong> (SMP)</div>
+        <div class="list-item"><strong>Ekstrakurikuler Pramuka</strong> (SD)</div>
+
+        <h2>Sertifikat</h2>
+        <div class="list-item">Lomba MTQ Antar Madrasah</div>
+        <div class="list-item">Wisuda Tahfidz</div>
+        <div class="list-item">Pesantren Kilat Madrasah</div>
+        <div class="list-item">Pesantren Kilat Sekolah</div>
+    </div>
+</div>
+
+</body>
+</html
